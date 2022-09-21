@@ -27,11 +27,3 @@ app.get("/login-yediz", (req, res) => {
 app.get("/productCar", (req, res) => {
   res.sendFile(path.resolve("./views/productCar.html"));
 });
-
-function login() {
-  event.preventDefault();
-  let userName = document.getElementById("userName").value;
-  let password = document.getElementById("contraseña").value;
-  let rememberMe = document.getElementById("recuerdame").checked;
-  console.log([userName, password, rememberMe]);
-}
